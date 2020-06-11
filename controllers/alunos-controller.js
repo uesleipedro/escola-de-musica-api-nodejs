@@ -131,7 +131,7 @@ exports.login = async (req, res) => {
 };
 
 function generateToken(params = {}){
-    return jwt.sign({ params }, authConfig.secret, {
+    return jwt.sign({ params }, authConfig.secret_aluno, {
         expiresIn: 86400, //1 dia 
     });
 }

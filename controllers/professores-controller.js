@@ -126,7 +126,7 @@ console.log(response.rows);
 };
 
 function generateToken(params = {}){
-    return jwt.sign({ params }, authConfig.secret, {
+    return jwt.sign({ params }, authConfig.secret_professor, {
         expiresIn: 86400, //1 dia 
     });
 }
